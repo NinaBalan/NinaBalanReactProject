@@ -7,13 +7,14 @@ export default class PortfolioContainer extends Component {
     super();
 
     this.state = {
-      pageTitle: "Welcome to my portfolio",
+      pageTitle: "Welcome to my cookbook",
       isLoading: false,
       data: [
-        { title: "Pagina1", category: "eCommerce" },
-        { title: "Pagina2", category: "eLearning" },
-        { title: "Pagina3", category: "Enterprise" },
-        { title: "Pagina4", category: "eCommerce" }
+        { title: "Recipe1", category: "salads" },
+        { title: "Recipe2", category: "soups" },
+        { title: "Recipe3", category: "main dish" },
+        { title: "Recipe4", category: "appetizers" },
+        { title: "Recipe5", category: "desserts" }
       ]
     };
 

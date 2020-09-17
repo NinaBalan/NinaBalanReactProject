@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Logo from './logo';
 
 import PortfolioContainer from "./portfolio/portfolio-container";
 import NavigationContainer from "./navigation/navigation-container";
@@ -10,10 +11,13 @@ export default class App extends Component {
   render() {
     return (
       <div className='app'>
+        
         <Router>
           <div>
             <NavigationContainer />
-
+            <div>
+          <Logo/>
+        </div>
             <Switch>
               <Route exact path="/" component={Home} />
               <Route path="/about-me" component={About} />
@@ -21,7 +25,6 @@ export default class App extends Component {
           </div>
         </Router>
 
-        <h1>NinaBalanReactProject</h1>
         <PortfolioContainer />
       </div>
     );
