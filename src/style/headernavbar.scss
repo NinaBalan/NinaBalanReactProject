@@ -1,6 +1,6 @@
 .header {
-    width: 100vw;
-    height: 1000vh;
+    grid-row: header-s/header-e;
+    grid-column: 1/-1;
 
     display: grid;
     justify-content: center;
@@ -10,6 +10,9 @@
 }
 
 .navbar {
+    grid-row: navbar-s/navbar-e;
+    grid-column: 1/-1;
+
     background-color: #082452;//de schimbat culoarea
     box-shadow: 0 2px 6px 0 rgba(145, 91, 189, 0.2);
 }
